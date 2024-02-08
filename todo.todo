@@ -16,3 +16,9 @@ Création de l'environnement du projet :
         ✔ .gitignore @started(24-02-07 22:18) @done(24-02-07 22:20) @lasted(2m48s)
         ✔ .babelrc @started(24-02-07 22:19) @done(24-02-07 22:21) @lasted(2m46s)
         ✔ index.js @started(24-02-07 22:26) @done(24-02-07 22:46) @lasted(20m37s)
+
+Creation des fichier :
+    Création du user :
+        ✔ userModel @started(24-02-07 23:00) @done(24-02-07 23:25) @lasted(25m57s)
+        ☐ userController @started(24-02-07 23:01)
+        ☐ userRouter @started(24-02-07 23:01)

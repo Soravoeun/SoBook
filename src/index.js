@@ -2,6 +2,7 @@ import express from 'express';
 import "dotenv/config";
 import mongoose from 'mongoose';
 import cors from 'cors';
+import { userRouter } from './routes/userRoute';
 
 main().catch((err) => console.log(err));
 async function main() {
@@ -20,6 +21,8 @@ app.use(express.urlencoded({ extended: false }));
 app.get('/', (req, res) => {
     res.json("Welcome to SoBook"); 
 });
+
+app.use('/user', userRouter )
 
 
 app.listen(port, () =>
