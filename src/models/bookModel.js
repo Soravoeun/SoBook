@@ -1,4 +1,4 @@
-import mongoose, { Schema } from "mongoose";
+import { Schema, model } from "mongoose";
 
 
 const bookSchema = new Schema({
@@ -9,4 +9,4 @@ const bookSchema = new Schema({
     synopsis: { type: "string", required: true },
 })
 
-export const Book = mongoose.model("Book", bookSchema);
+export const Book = model("Book", bookSchema);

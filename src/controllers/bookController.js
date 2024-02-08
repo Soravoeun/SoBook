@@ -35,22 +35,31 @@ export const getOneBook = async (req, res) => {
 
 export const updateBook = async (req, res) => {
   try {
-    let putBook = await Book.findByIdAndUpdate(req.body);
+    const bookId = req.params.id;
+    const bookData = req.body;
+    const putBook = await Book.findByIdAndUpdate(bookId, bookData, {
+      new: true,
+    });
     console.log(putBook);
     if (!putBook) {
       return res.status(404).json({ error: "Book non trouvé" });
     }
+    res.json({ message: "Book updated successfully" });
   } catch (error) {
     res.status(404).json(error.message);
   }
 };
 
-export const deleteBook = async (req, res) => { 
-    try {
-        let removeBook = await Book.findByIdAndDelete(req.body);
-        console.log(removeBook);
-        res.json({ message: "Book deleted successfully" });
-    } catch (error) {
-        res.status(404).json(error.message);
-    }
-}
+export const deleteBook = async (req, res) => {
+  try {
+    const bookId = req.params.id;
+    const bookData = req.body;
+    let removeBook = await Book.findByIdAndDelete(bookId, bookData, {
+      new: true,
+    });
+    console.log(removeBook);
+    res.json({ message: "Book deleted successfully" });
+  } catch (error) {
+    res.status(404).json(error.message);
+  }
+};
