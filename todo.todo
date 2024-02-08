@@ -24,6 +24,6 @@ Creation des fichier :
         ✔ userRouter @started(24-02-07 23:01) @done(24-02-08 09:45) @lasted(10h44m36s)
 
     Creation du book : 
-        ☐ bookModel @started(24-02-08 09:46)
-        ☐ bookController @started(24-02-08 09:46)
-        ☐ bookRouter @started(24-02-08 09:46)
+        ✔ bookModel @started(24-02-08 11:00) @done(24-02-08 11:29) @lasted(29m37s)
+        ✔ bookController @started(24-02-08 11:00) @done(24-02-08 11:29) @lasted(29m37s)
+        ✔ bookRouter @started(24-02-08 11:00) @done(24-02-08 11:29) @lasted(29m30s)
