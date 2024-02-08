@@ -3,6 +3,7 @@ import "dotenv/config";
 import mongoose from 'mongoose';
 import cors from 'cors';
 import { userRouter } from './routes/userRoute';
+import { bookRouter } from './routes/bookRoute';
 
 main().catch((err) => console.log(err));
 async function main() {
@@ -22,7 +23,8 @@ app.get('/', (req, res) => {
     res.json("Welcome to SoBook"); 
 });
 
-app.use('/user', userRouter )
+app.use('/user', userRouter)
+app.use('/book', bookRouter)
 
 
 app.listen(port, () =>
