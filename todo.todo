@@ -27,3 +27,7 @@ Creation des fichier :
         ✔ bookModel @started(24-02-08 11:00) @done(24-02-08 11:29) @lasted(29m37s)
         ✔ bookController @started(24-02-08 11:00) @done(24-02-08 11:29) @lasted(29m37s)
         ✔ bookRouter @started(24-02-08 11:00) @done(24-02-08 11:29) @lasted(29m30s)
+
+
+Création du middleware : 
+    ☐ Création du fichier auth.js @started(24-02-26 10:02)
