@@ -28,6 +28,10 @@ Creation des fichier :
         ✔ bookController @started(24-02-08 11:00) @done(24-02-08 11:29) @lasted(29m37s)
         ✔ bookRouter @started(24-02-08 11:00) @done(24-02-08 11:29) @lasted(29m30s)
 
+    Création du subscriber :
+        ✔ subscriberModel @done(24-03-18 12:11)
+        ✔ subscriberController @done(24-03-18 12:11)
+        ✔ subscriberRouter @done(24-03-18 12:11)
 
 Création du middleware : 
     ☐ Création du fichier auth.js @started(24-02-26 10:02)
